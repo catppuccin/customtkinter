@@ -40,6 +40,16 @@
 2. In your Python file, put `customtkinter.set_default_color_theme("path/to/catppuccin-{flavor}-{accent}.json")` (replace `path/to` with the actual path and replace `{flavor}` with the flavor you chose and `{accent}` with the accent you chose).
 3. Enjoy!
 
+### Overrides
+
+To override the font from generation time, when generating the files add an override like so: `whiskers customtkinter.tera --overrides '{"font": {"size": 14}}'`. The available overrides (where `size` is) are:
+- font
+  - size (default: **13**)
+  - weight (default: **normal**)
+  - macos (default: **SF Display**)
+  - windows (default: **Roboto**)
+  - linux (default: **Roboto**)
+
 ## 🙋 FAQ
 
 - Q: **_"How do I change themes?"_**\
